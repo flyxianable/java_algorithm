@@ -16,9 +16,9 @@ public class MyClass {
 
 //        treateFind();
 
-//        treateWorkDay();
+        treateWorkDay();
 
-        treate1024();
+//        treate1024();
 
     }
 
@@ -42,7 +42,7 @@ public class MyClass {
 //        String[] input = {"yyy=seeyouwwwgoodby", "ttt=wwwgoodby", "xxx=lyf/wwwgoodby/test" ,"ddd=goodby", "aa=/aaa/lyf/wwwgoodby/test/bbb/seeyouwwwgoodby/cccwwwgoodby"};
 
         Shell shell = new Shell();
-//        shell.treateShellString();
+        shell.treateShellString(input);
         shell.testScanner();
     }
 
@@ -63,8 +63,9 @@ public class MyClass {
 //        workDay.treateFullWork("absent present late present present present " +
 //                "present leaveearly late present present");
 
-        workDay.treateFullWork("absent present present present present late " +
+        boolean isFullWork = workDay.treateFullWork("absent present present present present late " +
                 "present leaveearly present present late");
+        System.out.println("isFullWork = " + isFullWork);
 
     }
 
